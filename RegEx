@@ -1,0 +1,20 @@
+class Main {
+  
+  
+  public static boolean checkNameValidity(String name) { 
+
+
+    String regEx = "\\S[\\W][A-Z*a-z]\\w{2,30}\\S"; 
+
+    if(name.matches(regEx)) { 
+      return true; 
+    } return false; 
+  }
+  
+  
+  public static void main(String[] args) {
+    
+    String name = "Roger froger"; 
+    System.out.println("The name " + (checkNameValidity(name) ? "valid" : "invalid"));
+  }
+}
